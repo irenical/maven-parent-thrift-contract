@@ -36,6 +36,17 @@
               <goal>compile</goal>
             </goals>
           </execution>
+          <execution>
+            <id>thrift-docs</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>compile</goal>
+            </goals>
+            <configuration>
+              <generator>html</generator>
+              <outputDirectory>${project.build.directory}/generated-docs</outputDirectory>
+            </configuration>
+          </execution>
         </executions>
       </plugin>
     </plugins>
